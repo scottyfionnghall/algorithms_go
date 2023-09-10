@@ -1,9 +1,9 @@
 package main
 
 import (
+	sort "customsort"
 	"fmt"
 	"math/rand"
-	qs "quicksort"
 	"time"
 )
 
@@ -28,5 +28,5 @@ func seqGen(low int, high int) []int {
 func main() {
 	seq := seqGen(0, 1000000)
 	defer timer("QuickSort")()
-	qs.QuickSort(seq, 0, len(seq)-1)
+	sort.QuickSort(seq, 0, len(seq)-1)
 }
