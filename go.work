@@ -1,1 +1,7 @@
 go 1.21.1
+
+use (
+	./sort/insertsort
+	./sort/quicksort
+	./sort/selectsort
+)
